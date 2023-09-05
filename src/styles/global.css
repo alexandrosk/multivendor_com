@@ -6,3 +6,17 @@
 @supports (font-variation-settings: normal) {
   :root { font-family: 'Inter var', sans-serif; }
 }
+
+.gradient-text {
+  color: transparent;
+  background-image: linear-gradient(106.94deg,#15c064 28.5%,#00d1ff 91.82%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.bg-gradient {
+  --tw-gradient-from: #5fd5b6 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(95,213,182,0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+  --tw-gradient-to: #4bfe85 var(--tw-gradient-to-position);
+  background-image: linear-gradient(to bottom right,var(--tw-gradient-stops));
+}
