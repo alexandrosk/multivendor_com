@@ -89,6 +89,7 @@ module.exports = {
         screens: "url('/path-to/image.png')",
       }),
       colors: {
+        ...colors,
         black: "#141521",
        
         accent: {

@@ -1,0 +1,79 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<section class="bg-white border-b border-black/5">
+	<div class="w-full mx-auto md:px-12 px-8 max-w-7xl lg:px-16">
+		<div
+			x-data="{ open: false }"
+			class="relative flex flex-col w-full py-5 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6">
+			<div class="flex flex-row items-center justify-between lg:justify-start">
+				<a href="/" class="lg:pr-8 text-black inline-flex items-center gap-3">
+					<svg style="    width: 60px;
+    background: #000;
+    padding: 0px 5px 0 2px;
+    border-radius: 10px;
+    stroke: #fff;" stroke="#fff" stroke-width="2" xmlns="http://www.w3.org/2000/svg" data-name="Camada 1" viewBox="0 0 120 130" x="0px" y="0px"><path d="M64,28C37.53223,28,16,42.10156,16,59.43457v9.13086C16,85.89844,37.53223,100,64,100s48-14.10156,48-31.43457V59.43457C112,42.10156,90.46777,28,64,28Zm0,70C38.63574,98,18,84.7959,18,68.56543v-.165c5.90857,12.97772,24.28864,22.46924,46,22.46924,19.29883,0,35-9.66455,35-21.54346a14.07687,14.07687,0,0,0-1.24609-5.73145C93.62793,54.28467,79.748,47.78271,64,47.78271c-14.54285,0-27.486,5.54706-32.6322,13.72778A11.66807,11.66807,0,0,1,31,58.67383c0-10.77637,14.80371-19.54346,33-19.54346,25.36426,0,46,13.20459,46,29.43506S89.36426,98,64,98ZM95.71515,64C91.66931,72.389,78.7417,78.21729,64,78.21729S36.33069,72.389,32.28485,64C36.33069,55.611,49.2583,49.78271,64,49.78271S91.66931,55.611,95.71515,64ZM64,37.13037c-19.29883,0-35,9.66455-35,21.54346a14.07687,14.07687,0,0,0,1.24609,5.73145C34.37207,73.71533,48.252,80.21729,64,80.21729c14.54291,0,27.486-5.54712,32.6322-13.72778A11.66845,11.66845,0,0,1,97,69.32617c0,10.77637-14.80371,19.54346-33,19.54346-25.36426,0-46-13.20459-46-29.43506S38.63574,30,64,30s46,13.2041,46,29.43457v.165C104.09143,46.62189,85.71136,37.13037,64,37.13037Z"/></svg>
+					<span class="font-bold font-display">MultivendorShop</span>
+				</a>
+				<button
+					@click="open = !open"
+					class="inline-flex items-center justify-center p-2 text-slate-400 hover:text-black focus:outline-none focus:text-black lg:hidden">
+					<svg
+						class="w-6 h-6"
+						stroke="currentColor"
+						fill="none"
+						viewBox="0 0 24 24">
+						<path
+							:class="{'hidden': open, 'inline-flex': !open }"
+							class="inline-flex"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4 6h16M4 12h16M4 18h16"></path>
+						<path
+							:class="{'hidden': !open, 'inline-flex': open }"
+							class="hidden"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M6 18L18 6M6 6l12 12"></path>
+					</svg>
+				</button>
+			</div>
+			<nav
+				:class="{'flex': open, 'hidden': !open}"
+				class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row">
+				<a
+					class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400 lg:ml-auto"
+					href="/#features">Features</a
+				>
+				<a
+					class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400"
+					href="/#pricing">Pricing</a
+				>
+
+				<a
+					class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400"
+					href="/faq">
+					Faq</a
+				>
+				<a
+					class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-black hover:text-accent-400"
+					href="/blog">
+					Blog</a
+				>
+
+				<div class="inline-flex items-center gap-2 list-none lg:ml-auto">
+					<a
+						href="/#subscribe"
+						class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-black bg-slate-100 rounded-lg group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-slate-50 active:bg-slate-200 active:text-accent-400 focus-visible:outline-black">
+						Notify me
+					</a>
+				</div>
+			</nav>
+		</div>
+	</div>
+</section>
+
