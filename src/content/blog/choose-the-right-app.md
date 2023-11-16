@@ -38,8 +38,12 @@ Vendors can also personalize their storefronts, adding a unique touch to their c
 ## How MultivendorShop.com Makes it Easy
 
 **1. Simple Setup:** Forget complex configurations. MultivendorShop.com offers a point-and-click solution to turn your Shopify store into a multi-vendor hub.
+[![customer-3.jpeg](/customer-3.jpeg)](https://multivendorshop.com)
 
 **2. Efficient Vendor Management:** Streamline vendor management, automate commission payouts, and boost sales with our centralized dashboard.
+
+[![customer-4.png](/customer-4.png)](https://multivendorshop.com)
+
 
 **3. Tailored Customization:** Personalize vendor storefronts without hassle, ensuring your platform aligns with the vibe of Depop, Etsy, or eBay.
 
